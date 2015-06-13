@@ -27,7 +27,7 @@ RUN ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 RUN echo "Europe/Moscow" > /etc/timezone
 
 # Add user
-RUN useradd -G sudo -s /bin/bash -Um bezr && passwd bezr
+RUN useradd -G sudo -s /bin/bash -Um bezr
 
 EXPOSE 22
 
